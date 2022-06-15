@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#titel{
+    text-align: center;
+    color: blueviolet;
+}
+
+footer{
+    background-color: aquamarine;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer>h5{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+}
+
+#nav{
+    list-style-type: none;
+    font-size: 20px;
+    font-family:'Kanit', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+#nav>li::marker{
+    
+    color:antiquewhite;
+}
+#nav>li{
+    margin-right: 20px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+#nav>li>a{
+    text-decoration: none;
+    
+}
+#nav>li>a:hover{
+    color: darkmagenta;
+    text-shadow: 0 0 10px rgb(255, 0, 81);
+}
+.navbar{
+    background-color: rgb(200,200,200);
+}
+
+/*.navbar, #nav, #nav>li, #nav>li>a ---  ALLES OVER NAVBAR*/
+
+.sidebar{
+    border: 3px dotted rebeccapurple;
+    width: 30%;
+}
+
+/*.sidebar is list met numbers listed dag1...*/
+
+.container{
+    margin: 10px;      
+    display: flex;
+}  /* met deze hebben we de text Lorem naast sidebar geplaatst*/
+
+.blog{
+    margin: 0;
+    padding: 0 20px;
+    font-size: 20px;
+    border: 2px solid black;
+} /* we hebben een zwarte border aan de text ingegeven en ook fontsize veranderd*/
+
+.flexbox{
+    position:relative;
+    margin: 50px auto;
+    width: 80%;
+    border: 3px solid blue;
+} /* alle kleine blokjes X hebben een blauw border en gecentreerd zijn*/
+
+.flexbox div{
+    width: 100px;
+    height: 100px;
+} /* blokjes groter geworden*/
+
+#box1{
+ background-color: rgb(105, 10, 81);
+ transform: matrix(0.5, 4, 2, 1, 2, 2);
+} /* verschillende transformaties*/
+
+#box2{ background-color: blue;
+    position: absolute;
+    left: 20px;
+    top:0;
+    transform: translateX(140px);
+    
+}
+#box3{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transform: skew(20deg);
+}
+#box4{
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 1;
+    transform: scaleY(20%);
+}
+ 
+
+#box5{
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    transform: rotate(45deg);
+}
+
+
+
